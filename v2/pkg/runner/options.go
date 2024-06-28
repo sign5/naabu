@@ -220,7 +220,7 @@ func ParseOptions() *Options {
 	}
 
 	// Check if stdin pipe was given
-	options.Stdin = !options.DisableStdin && fileutil.HasStdin()
+	// options.Stdin = !options.DisableStdin && fileutil.HasStdin()
 
 	options.ResumeCfg = NewResumeCfg()
 	if options.ShouldLoadResume() {
